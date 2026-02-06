@@ -1,0 +1,29 @@
+body {
+  background-color: var(--blue_background);
+}
+
+main {
+  background-color: var(--blue_card_background);
+  padding: 2rem;
+  border-radius: 25px;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+}
+main form .inputTitel {
+  width: 100%;
+  text-align: start;
+}
+main form .inputValue {
+  width: 100%;
+  max-width: 200px;
+  padding: 0.5rem;
+}
+main form #addButton {
+  background-color: var(--addButton);
+  color: var(--white);
+  width: 100%;
+  max-width: 200px;
+  margin: 0.5rem;
+}/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,34 @@
+body{
+    background-color: var(--blue_background);
+}
+
+main{
+    background-color: var(--blue_card_background);
+    padding: 2rem;
+    border-radius: 25px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        .inputTitel{
+            width: 100%;
+            text-align: start;
+        }
+
+        .inputValue{
+            width: 100%;
+            max-width: 200px;
+            padding: 0.5rem;
+        }
+
+        #addButton{
+            background-color: var(--addButton);
+            color: var(--white);
+            width: 100%;
+            max-width: 200px;
+            margin: 0.5rem;
+        }
+    }
+}
+
