@@ -1,6 +1,11 @@
 import './App.css'
 import '../src/style/colors.scss'
 import '../src/style/layout.scss'
+import '../src/components/AddForm'
+import '../src/components/ShoppingItem'
+import '../src/components/ShoppingList'
+
+
 
 
 function shoppingList (){
