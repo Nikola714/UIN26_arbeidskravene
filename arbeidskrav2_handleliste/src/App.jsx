@@ -10,12 +10,11 @@ import ShoppingItem from '../src/components/ShoppingItem'
 
 function App (){
 
-  const [list, setList] = useState([])
-  const [vare, setVare] = useState([])
+  const [list, setItems] = useState([])
 
   return (
     <>
-      <AddForm setList={setList}/>
+      <AddForm setItems={setItems}/>
       <ShoppingItem/>
     </>
   )
