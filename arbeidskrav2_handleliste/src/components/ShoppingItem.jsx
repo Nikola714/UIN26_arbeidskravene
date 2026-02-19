@@ -1,16 +1,24 @@
-export default function ShoppingItem ({setItems, title, quantity}) {
-   const itemsClick = () => {
-      setItems((prev) => prev.filter(item.id !== id))
-      console.log(id)
-   }
+export default function ShoppingItem ({ quantity, item}) {
+ 
+function tooglePurchased() {
 
-   return (
+}
+
+  return (
     <>
-      <ul>
-         <li>{title}</li>
-         <li>{quantity}</li>
-         <button onClick={itemsClick}>X</button>
-      </ul>
+      <li>
+         <input 
+            type="checkbox" 
+            checked={item.purchased}
+            onChange={() => tooglePurchased(item.id)}
+         />
+         <span className={item.purchased ? "done" : ""}>{item.name}</span>
+
+         <input 
+            type="number"
+            value={item.quantity}
+         />
+      </li>
     </>
    )
 }
