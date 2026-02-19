@@ -35,11 +35,7 @@ function App (){
 
     setItems([newItem, ...list])
   }
-
-
-
-
-
+  
   return (
     <>
     <section>
@@ -51,6 +47,8 @@ function App (){
       
     </>
   )
+
+
 }
 
 export default App
