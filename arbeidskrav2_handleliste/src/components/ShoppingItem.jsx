@@ -1,7 +1,9 @@
 export default function ShoppingItem ({ quantity, item}) {
  
-function tooglePurchased() {
-
+function tooglePurchased(id) {
+ console.log(id)
+ console.log(item)
+ item.purchased = !item.purchased //hvis chexbox er true, bytt til false
 }
 
   return (
@@ -9,7 +11,7 @@ function tooglePurchased() {
       <li>
          <input 
             type="checkbox" 
-            checked={item.purchased}
+            defaultChecked={item.purchased} //for å gjøre checkbox interaktiv
             onChange={() => tooglePurchased(item.id)}
          />
          <span className={item.purchased ? "done" : ""}>{item.name}</span>
