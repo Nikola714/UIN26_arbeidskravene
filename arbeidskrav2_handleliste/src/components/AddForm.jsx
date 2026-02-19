@@ -1,5 +1,5 @@
 export default function AddForm({addItem}) {
-  //funkjson for å vite hvilket felt som oppdateres og er kalt hver gang brukeren skriver noe i feltene 
+  
     const itemsClick = (e) => {
       e.preventDefault()
 
