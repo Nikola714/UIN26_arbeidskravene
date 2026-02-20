@@ -1,4 +1,4 @@
-export default function ShoppingItem ({item, addItem}) {
+export default function ShoppingItem ({item}) {
  
 function tooglePurchased(id) {
  console.log(id)
@@ -14,12 +14,11 @@ function tooglePurchased(id) {
             defaultChecked={item.purchased} //for å gjøre checkbox interaktiv
             onChange={() => tooglePurchased(item.id)}
          />
-         {/* <span className={item.purchased ? "done" : ""}>{item.name}</span> */}
+         <span>{item.name}</span>
 
          <input 
             type="number"
-            value={item.quantity}
-            onChange={e => addItem(item.id, Number(e.target.value))}
+            defaultValue={item.quantity} //antall produkter kan endres når som helst, men start verdi er den som ble bestemt tidligere
          />
       </li>
     </>

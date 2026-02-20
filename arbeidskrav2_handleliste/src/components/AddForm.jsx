@@ -7,20 +7,19 @@ export default function AddForm({addItem}) {
       //henter verdi fra ny elementer, altså elementer som brukeren skrevet in i input felte
       const name = e.target.name.value;
       const quantity = e.target.quantity.value;
-
+      //If test for å sjekke om alle feltene ble fylt på, if test sier; hvis noe ble ikke legget til så skriv alert og ikke legg noe til liste, for å unngå tomt felte i liste
+      if(!name && !quantity){
+        return alert("Du legget ikke noe til liste, skriv navn for vare og antall :)")
+      }
+      if(!name){
+        return alert("Du mangler navn for vare")
+      }
+      if(!quantity){
+        return alert("Du mangler antall for produkt")
+      }
       addItem(name, quantity)
 
       e.target.reset() //tommer inputfelte
-
-      if(!name && !quantity){
-        alert("Feil")
-      }
-      if (!name){
-        alert("Name")
-      }
-      if(!quantity){
-        alert("0")
-      }
 
     }
 
