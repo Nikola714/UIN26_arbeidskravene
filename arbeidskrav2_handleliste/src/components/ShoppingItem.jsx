@@ -8,7 +8,7 @@ function tooglePurchased(id) {
 
   return (
     <>
-      <li>
+      <li className="liste">
          <input 
             type="checkbox" 
             defaultChecked={item.purchased} //for å gjøre checkbox interaktiv
@@ -16,7 +16,7 @@ function tooglePurchased(id) {
          />
          <span>{item.name}</span>
 
-         <input 
+         <input className="listqQuantity"
             type="number"
             defaultValue={item.quantity} //antall produkter kan endres når som helst, men start verdi er den som ble bestemt tidligere
          />

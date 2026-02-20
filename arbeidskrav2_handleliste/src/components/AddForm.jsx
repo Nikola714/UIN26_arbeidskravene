@@ -30,7 +30,7 @@ export default function AddForm({addItem}) {
       <main>
         <form onSubmit={itemsClick} className="form">
           <label className='inputTitel' htmlFor='itemsName'>Vare</label>
-            <input className='inputValue' name="name" id='itemsName' type='text' placeholder='Egg...'/>
+          <input className='inputValue' name="name" id='itemsName' type='text' placeholder='Egg...'/>
 
           <label className='inputTitel' htmlFor='itemsQuantity'>Antall</label>
           <input className='inputValue' name="quantity" id='itemsQuantity' type='number' placeholder='2' min={1}/>
